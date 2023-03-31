@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import TrendList from 'components/TrendList/TrendList';
 
 const Home = () => {
+  //eslint-disable-next-line
   const [movies, setMovies] = useState([]);
   const location = useLocation();
   useEffect(() => {
