@@ -11,8 +11,7 @@ const TrendList = ({ getMovies }) => {
       .then(({ results }) => setMovies([...results]))
       .catch(err => console.log(err.message))
       .finally();
-  }, []);
-  console.log('location:', location);
+  }, [getMovies]);
 
   return (
     <div>

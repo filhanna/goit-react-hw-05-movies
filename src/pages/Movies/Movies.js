@@ -13,7 +13,7 @@ const Movies = () => {
       .then(responce => setMoviesObject(responce))
       .catch(err => console.log(err))
       .finally();
-  }, [searchParams.get('query'), searchParams]);
+  }, [searchParams]);
 
   const getMovies = async queryString => {
     const API_KEY = '233807a8ffc50a65007330f29276706a';
